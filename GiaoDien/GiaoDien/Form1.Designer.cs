@@ -28,32 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pn_SelectFolder = new Panel();
+            tv_TreeFolder = new TreeView();
+            btn_Scan = new Button();
             SuspendLayout();
             // 
-            // pn_SelectFolder
+            // tv_TreeFolder
             // 
-            pn_SelectFolder.AutoScroll = true;
-            pn_SelectFolder.Location = new Point(37, 12);
-            pn_SelectFolder.Name = "pn_SelectFolder";
-            pn_SelectFolder.Size = new Size(723, 426);
-            pn_SelectFolder.TabIndex = 0;
+            tv_TreeFolder.Location = new Point(30, 12);
+            tv_TreeFolder.Name = "tv_TreeFolder";
+            tv_TreeFolder.Size = new Size(661, 426);
+            tv_TreeFolder.TabIndex = 0;
+            // 
+            // btn_Scan
+            // 
+            btn_Scan.Location = new Point(697, 409);
+            btn_Scan.Name = "btn_Scan";
+            btn_Scan.Size = new Size(94, 29);
+            btn_Scan.TabIndex = 1;
+            btn_Scan.Text = "Scan";
+            btn_Scan.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(pn_SelectFolder);
-            StartPosition = FormStartPosition.CenterParent;
+            Controls.Add(btn_Scan);
+            Controls.Add(tv_TreeFolder);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Form1";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel pn_SelectFolder;
+        private TreeView tv_TreeFolder;
+        private Button btn_Scan;
     }
 }
