@@ -47,6 +47,7 @@
             btn_Scan.TabIndex = 1;
             btn_Scan.Text = "Scan";
             btn_Scan.UseVisualStyleBackColor = true;
+            btn_Scan.Click += btn_Scan_Click;
             // 
             // Form1
             // 
